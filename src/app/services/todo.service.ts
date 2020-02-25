@@ -5,5 +5,9 @@ import { Injectable } from '@angular/core';
 })
 export class TodoService {
 
-  constructor() { }
+  constructor() { 
+  }
+  getTodoList(){
+    return [1,2,3];
+  }
 }

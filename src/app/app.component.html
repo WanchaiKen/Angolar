@@ -1,4 +1,24 @@
-Hello {{ title }}
+Hello {{ title | uppercase}}
+<p>{{ amount | number:'5.5-5'}}</p>
+<p>{{ today | date}}</p>
+<p>{{ user | json}}</p>
 <div *ngIf="isLoading">
     Loading....
 </div>
+    {{ todoList}}
+
+    <img
+    [src]="imageUrl"
+    [class.active]="isActive">
+    
+    <p
+    [style.color]="isActive ? 'green' : 'red'">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, facere id sit adipisci repellendus laudantium dignissimos odio maxime laboriosam temporibus eaque incidunt autem ad fugit nisi veritatis necessitatibus quia. Nobis.
+    </p>  
+    <button (click)="onClickOkButton($event)">
+        OK
+      </button>
+      <input [(ngModel)]="email">
+      {{ email }}
+    <!-- <input #email
+  (keyup.enter)="search(email.value)"> -->
